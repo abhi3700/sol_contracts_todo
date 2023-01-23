@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+todo = "2eXx4gGsLzQdwNNjvgpkK868LxSSwAfYZ2UYbnsLQd49"
+[programs.devnet]
+todo = "2eXx4gGsLzQdwNNjvgpkK868LxSSwAfYZ2UYbnsLQd49"
+
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/abhi3700/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
